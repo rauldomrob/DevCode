@@ -1,0 +1,123 @@
+.todo_siguiente{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.siguiente{
+    position: relative;
+    display: inline-block;
+    color: var(--verde-complementario);
+    background-color: var(--verde-muy-oscuro);
+    border-radius: 3px;
+    font-size: 1rem;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.siguiente:hover, .siguiente:active{
+    background-color: #143012;
+    color: var(--verde-muy-claro-letras);
+    border-radius: 5px;
+    box-shadow: 0 0 5px #143012,
+    0 0 15px #143012,
+    0 0 20px #143012,
+    0 0 40px #143012;
+}
+
+.siguiente>button, .siguiente>.submit_siguiente{
+    font-family: 'Times New Roman', Times, serif;
+    padding: 10px 20px 10px 20px;
+    background-color: transparent;
+    border: none;
+    height: 100%;
+    color: var(--verde-complementario);
+    font-size: 1rem;
+}
+
+.siguiente>button:hover, .siguiente>button:active,
+.siguiente>.submit_siguiente:hover, .siguiente>.submit_siguiente:active{
+    font-family: 'Times New Roman', Times, serif;
+    padding: 10px 20px 10px 20px;
+    background-color: transparent;
+    border: none;
+    height: 100%;
+    color: var(--verde-muy-claro-letras);
+    font-size: 1rem;
+}
+
+.caja{
+    position: absolute;
+    display: block;
+}
+
+.caja1{
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 3px;
+    background-image: linear-gradient(90deg, transparent, var(--verde-complementario));
+    animation: animacion1 2s linear infinite;
+}
+
+@keyframes animacion1{
+    0%{
+        left: -100%;
+    }50%,100%{
+        left: 100%;
+    }
+}
+
+.caja2{
+    top: -100%;
+    right: 0;
+    width: 3px;
+    height: 100%;
+    background-image: linear-gradient(180deg, transparent, var(--verde-complementario));
+    animation: animacion2 2s linear infinite;
+    animation-delay: 0.5s;
+}
+
+@keyframes animacion2{
+    0%{
+        top: -100%;
+    }50%,100%{
+        top: 100%;
+    }
+}
+
+.caja3{
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 3px;
+    background-image: linear-gradient(270deg, transparent, var(--verde-complementario));
+    animation: animacion3 2s linear infinite;
+    animation-delay: 1s;
+}
+
+@keyframes animacion3{
+    0%{
+        right: -100%;
+    }50%,100%{
+        right: 100%;
+    }
+}
+
+.caja4{
+    bottom: -100%;
+    left: 0;
+    width: 3px;
+    height: 100%;
+    background-image: linear-gradient(360deg, transparent, var(--verde-complementario));
+    animation: animacion4 2s linear infinite;
+    animation-delay: 1.5s;
+}
+
+@keyframes animacion4{
+    0%{
+        bottom: -100%;
+    }50%,100%{
+        bottom: 100%;
+    }
+}

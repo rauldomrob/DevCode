@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email y Nombre de Usuario en Uso</title>
+    <link rel="stylesheet" href="../css/redirigir.css">
+    <link rel="shortcut icon" href="../img/icon-logo.png">
+</head>
+<body>
+    <div class="centrado">
+        <p>El correo y el nombre de usuario ingresados ya están en uso.</p>
+        <p>Por favor, inicia sesión o regístrate con otro correo y nombre de usuario.</p>
+        <br>
+        <p>Redirigiendo...</p>
+        <img src="../img/redirigiendo.gif">
+    </div>
+    <script>
+        /*Redirección a iniciar sesión después de 6 segundos*/
+        setTimeout(function() {
+            window.location.href = '../profile/login.php';
+        }, 6000);
+    </script>
+</body>
+</html>

@@ -1,0 +1,445 @@
+:root{
+    --verde-oscuro-degradado: #0a1609;
+    --verde-degradado: #24552c;
+    --verde-complementario: #499656;
+    --verde-muy-oscuro: #070f06;
+    --verde-oscuro-complementario: #2a5e25;
+    --verde-oscuro: #1e4b25;
+    --verde-muy-claro-letras: #defcdd;
+    --verde-claro-letras: #67b46e;
+    --verde-claro-complementario: #55b94c;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    height: fit-content;
+    width: 100vw;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 0.5px;
+}
+
+body{
+    overflow-x: hidden;
+    background-color: var(--verde-muy-oscuro);
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+.volver{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    width: 60px;
+    top: 20px;
+    left: 20px;
+}
+
+i.fa-solid{
+    font-size: 45px;
+}
+
+i.fa-solid:hover, i.fa-solid:active{
+    font-size: 47px;
+    text-shadow: 0 0 12px rgba(223, 252, 222, 0.15),
+                 0 0 15px rgba(223, 252, 222, 0.15),
+                 0 0 19px rgba(223, 252, 222, 0.15);
+}
+
+
+.todo{
+    height: auto;
+    width: 100vw;
+}
+
+.contenedor{
+    width: 70%;
+    margin: 20px;
+    padding: 20px 30px;
+    background-color: var(--verde-oscuro);
+    border-radius: 7px;
+    margin: 130px auto 40px auto;
+    box-shadow: 0 2px 5px var(--verde-oscuro-degradado);
+    border: 3px solid rgba(223, 252, 222, 0.25);
+}
+
+.todo_comentarios{
+    width: 70%;
+    margin: 20px;
+    position: relative;
+    top: -50px;
+    padding: 20px 30px;
+    background-color: var(--verde-oscuro);
+    border-radius: 7px;
+    margin: 90px auto 40px auto;
+    box-shadow: 0 2px 5px var(--verde-oscuro-degradado);
+    border: 3px solid rgba(223, 252, 222, 0.25);
+}
+
+.foto_publicacion{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.max_contenido{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.contenido{
+    width: 80%;
+    background-color: var(--verde-muy-claro-letras);
+    font-size: 19px;
+    padding: 16px;
+    border: 2px solid var(--verde-muy-oscuro);
+    border-radius: 20px;
+    margin-bottom: 25px;
+}
+
+.contenido:active, .contenido:hover{
+    background-color: #bcf7b9;
+    border: 2px solid var(--verde-muy-oscuro);
+    border-width: 3px;
+    margin-bottom: 23px;
+}
+
+.foto_publicacion>img{
+    width: 52%;
+}
+
+.fechaYHora{
+    display: flex;
+    width: 100%;
+    justify-content: right;
+    margin-bottom: -15px;
+    margin-top: 25px;
+    font-size: 17px;
+    position: relative;
+    right: -15px;
+    font-weight: bold;
+    color: var(--verde-muy-oscuro);
+    text-shadow: 0 0 5px #4ea55a;
+}
+
+.parteDeArriba{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.fotoYNombre{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.nombre{
+    font-size: 32px;
+    font-weight: bold;
+    color: var(--verde-muy-claro-letras);
+}
+
+.tema{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    border-bottom: 2px solid rgba(223, 252, 222, 0.25);
+    height: 28px;
+    color: var(--verde-muy-claro-letras);
+}
+
+.foto_user{
+    height: 75px;
+    width: 75px;
+    margin-right: 15px;
+}
+
+.foto_user img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    filter: brightness(70%);
+    border: 2px solid black;
+}
+
+.anadir_comentario{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+    height: 40px;
+    margin-top: 10px;
+}
+
+.form_inputs_comentario_nuevo{
+    width: 80%;
+    display: flex;
+}
+
+.inputs_comentario_nuevo{
+    width: 100%;
+}
+
+.nuevo_comentario{
+    width: 80%;
+    height: 45px;
+    padding: 4px 20px 15px 8px;
+    resize: none;
+    border-radius: 3px;
+    font-weight: bold;
+    color: var(--verde-degradado);
+    border: 2px solid var(--verde-oscuro-degradado);
+    background-color: var(--verde-muy-claro-letras);
+}
+
+.nuevo_comentario::placeholder{
+    color: var(--verde-degradado);
+    font-weight: bold;
+}
+
+.comentar{
+    padding: 0;
+    position: relative;
+    top: -18px;
+    width: 75px;
+    height: 40px;
+    font-weight: bold;
+    border: 1px solid var(--verde-oscuro-degradado);
+    border-radius: 8px;
+    background-color: var(--verde-complementario);
+}
+
+.comentar:active, .comentar:hover{
+    border-width: 2px;
+    background-color: #275c23c9;
+    box-shadow: 1px 1px 4px var(--verde-muy-oscuro);
+}
+
+.ordenar{
+    width: 161px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: -8px;
+}
+
+.ordenar button{
+    padding: 1px 0;
+    border: solid 2px var(--verde-muy-oscuro);
+    background-color: var(--verde-oscuro-degradado);
+    letter-spacing: 0.5px;
+    color: white;
+    margin-top: 1px;
+    border-radius: 4px;
+}
+
+.ordenar button:hover, .ordenar button:active{
+    border: solid 2px #0e1d0c;
+    background-color: #234920;
+    color: var(--verde-muy-claro-letras);
+}
+
+.nuevo_comentario:focus, .nuevo_comentario:valid{
+    outline: none;
+    background-color: white;
+    border-color: rgba(13, 83, 45, 0.5);
+    box-shadow: 2px 3px 4px var(--verde-oscuro-degradado);
+}
+
+.nuevo_comentario:hover, .nuevo_comentario:active{
+    background-color: white;
+    border-color: rgba(13, 83, 45, 0.5);
+    box-shadow: 2px 3px 4px var(--verde-oscuro-degradado);
+}
+
+.comentarios{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.comentario{
+    width: 80%;
+    background-color: var(--verde-muy-claro-letras);
+    font-size: 20px;
+    padding: 5px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border: 1px solid var(--verde-muy-oscuro);
+    border-radius: 3px;
+}
+
+.comentario:hover, .comentario:active{
+    background-color: white;
+    position: relative;
+    top: -2px;
+    border: 1px solid var(--verde-muy-oscuro);
+    box-shadow: 0px 3px 5px var(--verde-oscuro-degradado);
+}
+
+.comentario:hover .nombre_usuario, .comentario:active .nombre_usuario{
+    border-bottom: 2px solid rgba(25, 44, 29, 0.9);
+    font-weight: 600;
+}
+
+.nombre_usuario{
+    padding-bottom: 1px;
+    border-bottom: 2px solid rgba(39, 53, 42, 0.6);
+}
+
+.texto_comentario{
+    width: 100%;
+    padding-left: 5px;
+    padding-top: 5px;
+    margin-bottom: 15px;
+}
+
+@media(max-width: 1250px){
+    .contenido, .texto_comentario{
+        font-size: 17px;
+    }
+}
+
+@media(max-width: 960px){
+    .nombre{
+        font-size: 27px;
+    }
+
+    .tema{
+        font-size: 21px;
+    }
+
+    .ordenar{
+        margin-left: 49px;
+    }
+
+    .contenido, .texto_comentario{
+        font-size: 15px;
+    }
+
+    .nombre_usuario{
+        font-size: 17px;
+    }
+
+    .nuevo_comentario{
+        position: relative;
+        top: 15px;
+    }
+
+    .comentar{
+        position: relative;
+        top: 15px;
+    }
+
+    .comentarios{
+        margin-top: 40px;
+    }
+
+    textarea{
+        min-width: 175px;
+    }
+}
+
+@media(max-width: 911px){
+    .tema{
+        font-size: 18px;
+    }
+
+    .nombre{
+        font-size: 26px;
+    }
+}
+
+@media(max-width: 805px){
+    .parteDeArriba{
+        flex-direction: column;
+    }
+    .tema{
+        margin-top: 15px;
+    }
+
+    .foto_publicacion>img{
+        width: 76%;
+    }
+}
+
+@media(max-width: 635px){
+    .ordenar{
+        left: -225px;
+        top: 92px;
+    }
+
+    .comentarios{
+        margin-top: 95px;
+    }
+
+    .comentario{
+        width: 59vw;
+        font-size: 17px;
+    }
+
+    .nuevo_comentario{
+        width: 160%;
+    }
+
+    .foto_publicacion>img{
+        width: 86%;
+    }
+
+    .contenido{
+        margin-bottom: 5px;
+    }
+
+    .contenido, .texto_comentario{
+        font-size: 14px;
+    }
+
+    .nombre_usuario{
+        font-size: 16px;
+    }
+}
+
+@media(max-width: 471px){
+    
+    .nuevo_comentario{
+        width: 80%;
+    }
+
+    .tema{
+        font-size: 16px;
+        text-align: center;
+        padding-bottom: 8px;
+        margin-top: 25px;
+    }
+}
+
+@media(max-width: 407px){
+    .contenedor, .todo_comentarios{
+        width: 90%;
+        min-width: 284px;
+    }
+
+    .texto_comentario{
+        width: 100%;
+    }
+
+    .comentario{
+        width: 100%;
+    }
+}

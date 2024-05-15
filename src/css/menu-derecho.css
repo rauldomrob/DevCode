@@ -1,0 +1,129 @@
+:root{
+    --verde-oscuro-degradado: #0a1609;
+    --verde-degradado: #24552c;
+    --verde-complementario: #499656;
+    --verde-muy-oscuro: #070f06;
+    --verde-oscuro-complementario: #2a5e25;
+    --verde-oscuro: #1e4b25;
+    --verde-muy-claro-letras: #defcdd;
+    --verde-claro-letras: #67b46e;
+    --verde-claro-complementario: #55b94c;
+}
+
+#menu-der{
+    z-index: 10;
+    height: 88.5vh;
+    width: 70px;
+    position: sticky;
+    top: 105px;
+    right: 0;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 0.5px;
+}
+
+#menu-der li{
+    position: relative;
+    font-size: 14px;
+    display: table;
+    padding: 10px;
+}
+
+#menu-der .fa{
+    position: relative;
+    width: 50px;
+    height: 40px;
+    top: 14px;
+    font-size: 25px;
+    text-align: center;
+    color: var(--verde-muy-claro-letras);
+}
+
+#menu-der .fa:hover,
+#menu-der .fa:active{
+    text-shadow: 0 0 12px rgba(223, 252, 222, 0.2),
+                 0 0 15px rgba(223, 252, 222, 0.2),
+                 0 0 19px rgba(223, 252, 222, 0.2);
+}
+
+#menu-der #log-out{
+    position: absolute;
+    bottom:  2.74vh;
+}
+
+#menu-der .text-bar{
+    position: relative;
+    top: 12px;
+    margin-right: 11px;
+}
+
+#menu-der li button{
+    max-width: fit-content;
+    max-height: fit-content;
+    background-color: transparent;
+    border: none;
+}
+
+#menu-der li button:hover{
+    cursor: pointer;
+}
+
+
+#menu-der .tapar {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    pointer-events: auto;
+    z-index: 10000;
+}
+
+#menu-der .seguroYRespuesta{
+    background-color: var(--verde-muy-claro-letras);
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--verde-muy-oscuro);
+}
+
+.seguroYRespuesta>p{
+    display: block;
+    margin-bottom: 25px;
+}
+
+.seguroYRespuesta button, .seguroYRespuesta div{
+    display: inline-block;
+    font-size: 18px;
+    background-color: var(--verde-oscuro-degradado);
+    color: var(--verde-muy-claro-letras);
+    padding: 7px 16px;
+    border: 1px solid black;
+    cursor: pointer;
+    margin: 0 20px;
+    border-radius: 3px;
+    box-shadow: 2px 2px 5px black;
+}
+
+.seguroYRespuesta button:hover, .seguroYRespuesta div:hover,
+.seguroYRespuesta button:active, .seguroYRespuesta div:active{
+    color: white;
+    background-color: #1e3b1c;
+    box-shadow: 3px 3px 7px #1e3b1c;
+}
+
+@media (max-width: 1200px){
+    #menu-der{
+        height: 100vh;
+        position: sticky;
+        top: 0;
+    }
+    #menu-der .tapar {
+        top: 200px;
+    }
+}

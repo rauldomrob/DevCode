@@ -1,0 +1,62 @@
+:root {
+    --verde-oscuro-degradado: #0a1609;
+    --verde-degradado: #24552c;
+    --verde-complementario: #499656;
+    --verde-muy-oscuro: #070f06;
+    --verde-oscuro-complementario: #2a5e25;
+    --verde-oscuro: #1e4b25;
+    --verde-muy-claro-letras: #defcdd;
+    --verde-claro-letras: #67b46e;
+    --verde-claro-complementario: #55b94c;
+}
+
+body {
+    background-color: var(--verde-muy-claro-letras);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+.centrado {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--verde-oscuro);
+    color: var(--verde-muy-claro-letras);
+    font-size: 18px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px var(--verde-oscuro-degradado);
+    width: auto; 
+    max-width: 90%;
+}
+
+.centrado img {
+    width: 6%; 
+    height: 6%;
+    height: auto;
+}
+
+
+@media (max-width: 768px) { 
+    .centrado {
+        font-size: 16px; 
+        padding: 15px; 
+    }
+}
+
+@media (max-width: 480px) { 
+    .centrado {
+        font-size: 14px; 
+        padding: 10px; 
+    }
+}

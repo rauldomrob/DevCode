@@ -1,0 +1,249 @@
+:root {
+    --verde-oscuro-degradado: #0a1609;
+    --verde-degradado: #24552c;
+    --verde-complementario: #499656;
+    --verde-muy-oscuro: #070f06;
+    --verde-oscuro-complementario: #2a5e25;
+    --verde-oscuro: #1e4b25;
+    --verde-muy-claro-letras: #defcdd;
+    --verde-claro-letras: #67b46e;
+    --verde-claro-complementario: #55b94c;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    letter-spacing: 0.5px;
+}
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: var(--verde-oscuro-degradado);
+    color: var(--verde-muy-claro-letras);
+}
+
+.todo_publicar{
+    width: 80%;
+    margin: 20px;
+    padding: 20px 30px;
+    background-color: var(--verde-oscuro);
+    border-radius: 7px;
+    margin: 130px auto 40px auto;
+    box-shadow: 0 2px 5px var(--verde-oscuro-degradado);
+    border: 3px solid rgba(223, 252, 222, 0.25);
+}
+
+footer{
+    height: 260px;
+    width: 100vw;
+}
+
+.todo_publicar h1{
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.centrar{
+    display: flex;
+    justify-content: center;
+    align-items: top;
+}
+
+.centrar label{
+    font-size: 20px;
+}
+
+.contenido{
+    width: 40%;
+    display: inline-block;
+    /* background-color: red; */
+    text-align: center;
+
+}
+
+.contenido textarea{
+    resize: none;
+    outline: none;
+    padding: 6px;
+    margin-top: 10px;
+    height: 300px;
+    width: 90%;
+    color: var(--verde-oscuro-degradado);
+    font-weight: bold;
+    font-size: 16px;
+    background-color: var(--verde-muy-claro-letras);
+    border-radius: 4px;
+    border: 2px solid #2f6128;
+}
+
+.contenido textarea:hover,
+.contenido textarea:active,
+.contenido textarea:focus,
+.contenido textarea:valid{
+    border: var(--verde-muy-oscuro) 2px solid;
+    box-shadow: 4px 1px 10px var(--verde-muy-oscuro);
+}
+
+.contenido textarea::placeholder{
+    color: var(--verde-oscuro-degradado);
+}
+
+.subir_imagen{
+    /* background-color: lightcoral; */
+    width: 30%;
+    text-align: center;
+}
+
+.subir_imagen label{
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+#imagen{
+    max-width: 20vw;
+    max-height: 300px;
+    margin: 30px auto;
+    border: 2px solid var(--verde-muy-oscuro);
+    display: none;
+}
+
+.tematica{
+    width: 30%;
+    height: fit-content;
+    display: inline-block;
+    text-align: center;
+    overflow: hidden;
+}
+
+.tematica select{
+    overflow-y: hidden;
+}
+
+.tematica select:hover, .tematica select:active{
+    box-shadow: 4px 10px 10px var(--verde-oscuro-degradado);
+}
+
+.tematica select option{
+    padding: 10px; 
+    box-sizing: border-box;
+    border: 1px solid black;
+    background-color: var(--verde-muy-claro-letras); 
+    outline: none;
+    appearance: none; 
+    text-align: center;
+}
+
+.tematica select option:hover, .tematica select option:active{
+    background-color: #2168cd !important;
+    color: white;
+}
+
+.tematica label{
+    display: block;
+    margin-bottom: 10px;
+}
+
+#tematicas {
+    appearance: none;
+    background-color: transparent; 
+    border: none; 
+    outline: none; 
+}
+
+.tematica select option:checked {
+    background-color: #2168cd !important;
+    color: white !important;
+}
+
+.tematica select option:checked {
+    background-color: #2168cd !important; 
+    color: white !important;
+}
+
+@media(min-width: 1600px){
+    footer{
+        height: 280px;
+    }
+}
+
+@media(max-width: 1200px){
+    .centrar{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    footer{
+        position: relative;
+        top: 0;
+    }
+
+    .contenido, .tematica, .subir_imagen{
+        width: 100%;
+    }
+
+    .contenido textarea{
+        width: 70%;
+        font-size: 14px;
+    }
+
+    .contenido label{
+        display: block;
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .subir_imagen label{
+        display: block;
+        width: 100%;
+    }
+
+    .subir_imagen .label1{
+        margin-top: 50px;
+    }
+
+    .subir_imagen .label2{
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+
+    .imagen-publicacion{
+        margin-bottom: 30px;
+    }
+
+    #imagen-contenedor{
+        margin: auto;
+        width: 80%;
+    }
+
+    #imagen-contenedor img{
+        max-width: 100%;
+        max-height: 290px;
+    }
+}
+
+@media(max-width: 810px){
+    .contenido textarea{
+        font-size: 11px;
+        width: 90%;
+    }
+
+    .todo_publicar h1{
+        font-size: 25px;
+    }
+
+    .todo_publicar label{
+        font-size: 18px;
+    }
+
+    .imagen-publicacion{
+        font-size: 12px;
+    }
+
+    select{
+        font-size: 12px;
+    }
+}

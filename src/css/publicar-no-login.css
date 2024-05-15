@@ -1,0 +1,52 @@
+:root{
+    --verde-oscuro-degradado: #0a1609;
+    --verde-degradado: #24552c;
+    --verde-complementario: #499656;
+    --verde-muy-oscuro: #070f06;
+    --verde-oscuro-complementario: #2a5e25;
+    --verde-oscuro: #1e4b25;
+    --verde-muy-claro-letras: #defcdd;
+    --verde-claro-letras: #67b46e;
+    --verde-claro-complementario: #55b94c;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.publi{
+    top: 105px;
+    right: 0;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    width: 60px;
+}
+
+.publi .fa{
+    font-size: 25px;
+    color: var(--verde-muy-claro-letras);
+}
+
+.publi i.fa:hover, .publi i.fa:active{
+    text-shadow: 0 0 12px rgba(223, 252, 222, 0.2),
+                 0 0 15px rgba(223, 252, 222, 0.2),
+                 0 0 19px rgba(223, 252, 222, 0.2);
+}
+
+@media(max-width: 1200px){
+    .publi{
+        top: 0px;
+        right: 0;
+        margin-left: -30px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 60px;
+        width: 60px;
+    }
+}
