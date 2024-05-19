@@ -44,11 +44,11 @@
     }
 
     // Parámetros de conexión a la base de datos
-    $host="localhost";
-    $user="root";
+    $host="";
+    $user="";
     $password="";
-    $dbname="devcode";
-    $port=3306;
+    $dbname="";
+    $port=;
     $socket="";
 
     // Instanciamos un objeto de la clase BBDD para establecer nuestra conexión a la base de datos
